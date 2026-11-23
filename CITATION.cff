@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use these models in research or production, please cite this repository."
+title: "Object Detection Models: A YOLO Model Zoo for Industrial Inspection and Esports"
+abstract: "A curated collection of 14 fine-tuned YOLOv9, YOLOv10, YOLO11 and YOLO12 object detectors for industrial non-destructive testing, esports computer vision and real-time detection, with weights published on Hugging Face."
+authors:
+  - family-names: Paredes
+    given-names: José
+    alias: jparedesDS
+    website: "https://huggingface.co/jparedesDS"
+repository-code: "https://github.com/jparedesDS/object-detection-models"
+url: "https://huggingface.co/jparedesDS"
+license: MIT
+version: 1.0.0
+date-released: 2026-11-23
+keywords:
+  - object-detection
+  - computer-vision
+  - yolo
+  - yolov9
+  - yolov10
+  - yolo11
+  - yolo12
+  - ultralytics
+  - deep-learning
+  - industrial-inspection
+  - welding
+  - penetrant-testing
+  - esports

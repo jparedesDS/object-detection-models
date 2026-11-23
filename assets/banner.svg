@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="Object Detection Models — YOLO model zoo for industrial inspection and esports">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060B16"/>
+      <stop offset="55%" stop-color="#0B1526"/>
+      <stop offset="100%" stop-color="#0F1E36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A3E635"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#7DD3FC" stroke-width="1" opacity="0.055"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.55">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="300" fill="url(#bg)"/>
+  <rect width="1280" height="300" fill="url(#grid)"/>
+  <rect width="1280" height="300" fill="url(#glow)"/>
+
+  <!-- Decorative detection frame -->
+  <g opacity="0.9">
+    <rect x="884" y="58" width="154" height="112" rx="10" fill="none" stroke="#22D3EE" stroke-width="2"/>
+    <rect x="884" y="34" width="118" height="22" rx="5" fill="#22D3EE"/>
+    <text x="894" y="50" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#04121F">defect · 0.94</text>
+
+    <rect x="1010" y="118" width="172" height="122" rx="10" fill="none" stroke="#A3E635" stroke-width="2"/>
+    <rect x="1094" y="94" width="116" height="22" rx="5" fill="#A3E635"/>
+    <text x="1104" y="110" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#0A1602">player · 0.91</text>
+
+    <rect x="872" y="192" width="124" height="82" rx="10" fill="none" stroke="#A78BFA" stroke-width="2"/>
+    <rect x="872" y="168" width="120" height="22" rx="5" fill="#A78BFA"/>
+    <text x="882" y="184" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#140A26">weapon · 0.88</text>
+
+    <circle cx="962" cy="114" r="3.5" fill="#22D3EE"/>
+    <circle cx="1096" cy="180" r="3.5" fill="#A3E635"/>
+    <circle cx="934" cy="233" r="3.5" fill="#A78BFA"/>
+  </g>
+
+  <!-- Copy -->
+  <text x="64" y="78" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#22D3EE">JPAREDESDS · COMPUTER VISION</text>
+  <text x="64" y="146" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="54" font-weight="800" fill="#F8FAFC">Object Detection Models</text>
+  <text x="64" y="186" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#94A3B8">A YOLO model zoo for industrial inspection, esports and real-time vision.</text>
+
+  <rect x="64" y="214" width="330" height="4" rx="2" fill="url(#accent)"/>
+
+  <text x="64" y="252" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#CBD5E1">
+    <tspan font-weight="700" fill="#F8FAFC">14</tspan> fine-tuned models
+    <tspan fill="#475569">  ·  </tspan>
+    <tspan font-weight="700" fill="#F8FAFC">9</tspan> domains
+    <tspan fill="#475569">  ·  </tspan>
+    YOLOv9 → YOLO12
+    <tspan fill="#475569">  ·  </tspan>
+    Hugging Face
+  </text>
+
+  <text x="1216" y="276" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" fill="#64748B">github.com/jparedesDS/object-detection-models</text>
+</svg>
