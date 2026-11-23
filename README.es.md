@@ -12,7 +12,7 @@
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-22C55E)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jparedesDS/object-detection-models?style=flat&color=f5c518)](https://github.com/jparedesDS/object-detection-models/stargazers)
 
-[Model Zoo](#-model-zoo) · [Proyectos](#-proyectos) · [Inicio rápido](#-inicio-rápido) · [Herramientas](#-herramientas-de-entrenamiento-y-etiquetado) · [Documentación](docs/) · [English](README.md)
+[Model Zoo](#-model-zoo) · [Proyectos](#-proyectos) · [Inicio rápido](#-inicio-rápido) · [Herramientas](#-herramientas-de-entrenamiento-y-etiquetado) · [Documentación](docs/) · [Portfolio](https://www.jparedesds.com) · [English](README.md)
 
 </div>
 
