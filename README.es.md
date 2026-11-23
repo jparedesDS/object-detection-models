@@ -230,6 +230,12 @@ Si usas estos modelos en investigación o producción, se agradece una cita y un
 
 ---
 
+## 📚 Otras publicaciones
+
+- [**Nemotron 3 Diarization ONNX**](https://huggingface.co/jparedesDS/nemotron-3-diarization-onnx) — modelo cuantizado de diarización de hablantes para ONNX Runtime (audio, fuera del alcance de este zoo de detección de objetos).
+
+---
+
 ## 📝 Citación
 
 ```bibtex

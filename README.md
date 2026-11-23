@@ -230,6 +230,12 @@ If you use these models in research or production, a citation and a ⭐ on the r
 
 ---
 
+## 📚 Other publications
+
+- [**Nemotron 3 Diarization ONNX**](https://huggingface.co/jparedesDS/nemotron-3-diarization-onnx) — quantized speaker-diarization model for ONNX Runtime (audio, outside the scope of this object-detection zoo).
+
+---
+
 ## 📝 Citation
 
 ```bibtex
