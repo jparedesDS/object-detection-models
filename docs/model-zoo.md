@@ -15,11 +15,11 @@ Complete catalog of the 14 object-detection checkpoints published in this reposi
 | [CS2 Players · YOLOv9c](https://huggingface.co/jparedesDS/cs2-yolov9c) | YOLOv9c | Esports | 4 | — | — | — | — | — | — |
 | [CS2 Players · YOLOv10s](https://huggingface.co/jparedesDS/cs2-yolov10s) | YOLOv10s | Esports | 4 | 0.958 | 0.940 | **0.979** | **0.772** | 8.0 M | 24.5 |
 | [CS2 Players · YOLOv10m](https://huggingface.co/jparedesDS/cs2-yolov10m) | YOLOv10m | Esports | 4 | — | — | — | — | — | — |
-| [CS2 Players · YOLOv10b](https://huggingface.co/jparedesDS/cs2-yolov10b) | YOLOv10b | Esports | 4 | — | — | — | — | — | — |
-| [CS2 Players · YOLO12s](https://huggingface.co/jparedesDS/cs2_yolo12s) | YOLO12s | Esports | 4 | — | — | — | — | — | — |
+| [CS2 Players · YOLOv10b](https://huggingface.co/jparedesDS/cs2-yolov10b) | YOLOv10b | Esports | 4 | 0.908 | 0.757 | **0.850** | **0.635** | 20.4 M | 98.0 |
+| [CS2 Players · YOLO12s](https://huggingface.co/jparedesDS/cs2_yolo12s) | YOLO12s | Esports | 4 | 0.873 | 0.556 | **0.717** | **0.453** | 9.2 M | 21.2 |
 | [CS2 Weapons · YOLO12m](https://huggingface.co/jparedesDS/cs2-yolo12m-weapon-detection) | YOLO12m | Esports | 19 | 0.963 | 1.000 | **0.993** | **0.871** | 20.1 M | 67.2 |
 | [Valorant Players · YOLOv10b](https://huggingface.co/jparedesDS/valorant-yolov10b) | YOLOv10b | Esports | 2 | 0.959 | 0.886 | **0.925** | **0.631** | 20.4 M | 97.9 |
-| [Valorant Players · YOLO11m](https://huggingface.co/jparedesDS/valorant-yolo11m) | YOLO11m | Esports | 2 | — | — | — | — | — | — |
+| [Valorant Players · YOLO11m](https://huggingface.co/jparedesDS/valorant-yolo11m) | YOLO11m | Esports | 2 | 0.963 | 0.898 | **0.931** | **0.655** | 20.0 M | 67.7 |
 | [Deadlock Players · YOLO11l](https://huggingface.co/jparedesDS/deadlock-yolo11l) | YOLO11l | Esports | 4 | 0.874 | 0.798 | **0.856** | **0.486** | 25.3 M | 86.6 |
 | [Overwatch 2 · YOLO11m](https://huggingface.co/jparedesDS/ow2-yolo11m) | YOLO11m | Esports | 1 | 0.742 | 0.563 | **0.660** | **0.317** | 20.0 M | 67.6 |
 | [Fortnite · YOLO11m](https://huggingface.co/jparedesDS/fortnite-yolo11m) | YOLO11m | Esports | 2 | 0.933 | 0.739 | **0.828** | **0.668** | 20.0 M | 67.7 |
@@ -36,11 +36,11 @@ Complete catalog of the 14 object-detection checkpoints published in this reposi
 | CS2 players · YOLOv9c | [`cs2-yolov9c`](https://huggingface.co/jparedesDS/cs2-yolov9c) | `yolov9c_cs2.pt` | — |
 | CS2 players · YOLOv10s | [`cs2-yolov10s`](https://huggingface.co/jparedesDS/cs2-yolov10s) | `cs2_yolov10s.pt` | 160 images / 372 instances |
 | CS2 players · YOLOv10m | [`cs2-yolov10m`](https://huggingface.co/jparedesDS/cs2-yolov10m) | `yolov10m_cs2.pt` | — |
-| CS2 players · YOLOv10b | [`cs2-yolov10b`](https://huggingface.co/jparedesDS/cs2-yolov10b) | `yolov10b_cs2.pt` | — |
-| CS2 players · YOLO12s | [`cs2_yolo12s`](https://huggingface.co/jparedesDS/cs2_yolo12s) | `cs2_yolo12s.pt` | — |
+| CS2 players · YOLOv10b | [`cs2-yolov10b`](https://huggingface.co/jparedesDS/cs2-yolov10b) | `yolov10b_cs2.pt` | 90 images / 215 instances |
+| CS2 players · YOLO12s | [`cs2_yolo12s`](https://huggingface.co/jparedesDS/cs2_yolo12s) | `cs2_yolo12s.pt` | 90 images / 255 instances |
 | CS2 weapons · YOLO12m | [`cs2-yolo12m-weapon-detection`](https://huggingface.co/jparedesDS/cs2-yolo12m-weapon-detection) | `cs2-yolo12m-weapon-detection.pt` | 87 images / 158 instances |
 | Valorant · YOLOv10b | [`valorant-yolov10b`](https://huggingface.co/jparedesDS/valorant-yolov10b) | `yolov10b_vlr.pt` | 999 images / 2,016 instances |
-| Valorant · YOLO11m | [`valorant-yolo11m`](https://huggingface.co/jparedesDS/valorant-yolo11m) | `vlr-yolo11m.pt` | — |
+| Valorant · YOLO11m | [`valorant-yolo11m`](https://huggingface.co/jparedesDS/valorant-yolo11m) | `vlr-yolo11m.pt` | 999 images / 2,016 instances |
 | Deadlock · YOLO11l | [`deadlock-yolo11l`](https://huggingface.co/jparedesDS/deadlock-yolo11l) | `yolo11l_deadlock.pt` | 551 images / 661 instances |
 | Overwatch 2 · YOLO11m | [`ow2-yolo11m`](https://huggingface.co/jparedesDS/ow2-yolo11m) | `ow2-yolo11m.pt` | 273 images / 133 instances |
 | Fortnite · YOLO11m | [`fortnite-yolo11m`](https://huggingface.co/jparedesDS/fortnite-yolo11m) | `fortnite-yolo11m.pt` | 1,014 images / 2,097 instances |

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Object Detection Models — YOLO model zoo for industrial inspection and esports">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060B16"/>
+      <stop offset="55%" stop-color="#0B1526"/>
+      <stop offset="100%" stop-color="#0F1E36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A3E635"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7DD3FC" stroke-width="1" opacity="0.055"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.6">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <!-- Decorative detection frames -->
+  <g opacity="0.92">
+    <rect x="880" y="120" width="200" height="150" rx="12" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
+    <rect x="880" y="90" width="150" height="26" rx="6" fill="#22D3EE"/>
+    <text x="892" y="108" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#04121F">defect · 0.94</text>
+
+    <rect x="1040" y="250" width="190" height="160" rx="12" fill="none" stroke="#A3E635" stroke-width="2.5"/>
+    <rect x="1120" y="220" width="140" height="26" rx="6" fill="#A3E635"/>
+    <text x="1132" y="238" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0A1602">player · 0.91</text>
+
+    <rect x="860" y="380" width="160" height="120" rx="12" fill="none" stroke="#A78BFA" stroke-width="2.5"/>
+    <rect x="860" y="350" width="150" height="26" rx="6" fill="#A78BFA"/>
+    <text x="872" y="368" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#140A26">weapon · 0.88</text>
+
+    <circle cx="980" cy="195" r="4" fill="#22D3EE"/>
+    <circle cx="1135" cy="330" r="4" fill="#A3E635"/>
+    <circle cx="940" cy="440" r="4" fill="#A78BFA"/>
+  </g>
+
+  <!-- Copy -->
+  <text x="80" y="150" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5" fill="#22D3EE">JPAREDESDS · COMPUTER VISION</text>
+  <text x="80" y="250" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#F8FAFC">Object Detection</text>
+  <text x="80" y="330" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#F8FAFC">Models</text>
+  <text x="80" y="380" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" fill="#94A3B8">A YOLO model zoo for industrial inspection,</text>
+  <text x="80" y="412" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" fill="#94A3B8">esports and real-time vision.</text>
+
+  <rect x="80" y="446" width="420" height="5" rx="2.5" fill="url(#accent)"/>
+
+  <text x="80" y="500" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#CBD5E1">
+    <tspan font-weight="700" fill="#F8FAFC">14</tspan> fine-tuned models
+    <tspan fill="#475569">  ·  </tspan>
+    <tspan font-weight="700" fill="#F8FAFC">9</tspan> domains
+    <tspan fill="#475569">  ·  </tspan>
+    YOLOv9 → YOLO12
+  </text>
+  <text x="80" y="534" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" fill="#CBD5E1">
+    <tspan font-weight="700" fill="#F8FAFC">Hugging Face</tspan> weights
+    <tspan fill="#475569">  ·  </tspan>
+    training notebooks
+    <tspan fill="#475569">  ·  </tspan>
+    annotation toolkit
+  </text>
+
+  <text x="1200" y="600" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" fill="#64748B">github.com/jparedesDS/object-detection-models</text>
+</svg>

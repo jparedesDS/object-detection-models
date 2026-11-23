@@ -7,7 +7,7 @@
 **YOLOv10b and YOLO11m detectors for body and head localization in Valorant.**
 
 [![Architecture](https://img.shields.io/badge/Architecture-YOLOv10b_%7C_YOLO11m-0B1526)](https://github.com/ultralytics/ultralytics)
-[![mAP@50](https://img.shields.io/badge/mAP%4050-0.925-22C55E)](#results)
+[![mAP@50](https://img.shields.io/badge/mAP%4050-0.931-22C55E)](#results)
 [![Classes](https://img.shields.io/badge/Classes-2-22D3EE)](#class-labels)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97_Models-2-FFD21E)](https://huggingface.co/jparedesDS)
 
@@ -25,9 +25,9 @@
 | **Architectures** | YOLOv10b, YOLO11m |
 | **Checkpoints** | 2 |
 | **Classes** | `Body`, `Head` |
-| **Best mAP@50** | **0.925** (YOLOv10b) |
-| **Best mAP@50-95** | **0.631** (YOLOv10b) |
-| **Best checkpoint** | `yolov10b_vlr.pt` |
+| **Best mAP@50** | **0.931** (YOLO11m) |
+| **Best mAP@50-95** | **0.655** (YOLO11m) |
+| **Best checkpoint** | `vlr-yolo11m.pt` |
 | **Validation split** | 999 images / 2,016 instances |
 | **Model cards** | [`valorant-yolov10b`](https://huggingface.co/jparedesDS/valorant-yolov10b) · [`valorant-yolo11m`](https://huggingface.co/jparedesDS/valorant-yolo11m) |
 
@@ -43,8 +43,8 @@ Valorant's visual language — saturated abilities, unusual agent silhouettes an
 
 | Model | Architecture | Weights | Params | GFLOPs | mAP@50 | mAP@50-95 | Hugging Face |
 |---|---|---|:---:|:---:|:---:|:---:|---|
-| Valorant · YOLOv10b | YOLOv10b | `yolov10b_vlr.pt` | 20.4 M | 97.9 | **0.925** | **0.631** | [`valorant-yolov10b`](https://huggingface.co/jparedesDS/valorant-yolov10b) |
-| Valorant · YOLO11m | YOLO11m | `vlr-yolo11m.pt` | — | — | — | — | [`valorant-yolo11m`](https://huggingface.co/jparedesDS/valorant-yolo11m) |
+| Valorant · YOLOv10b | YOLOv10b | `yolov10b_vlr.pt` | 20.4 M | 97.9 | 0.925 | 0.631 | [`valorant-yolov10b`](https://huggingface.co/jparedesDS/valorant-yolov10b) |
+| Valorant · YOLO11m | YOLO11m | `vlr-yolo11m.pt` | 20.0 M | 67.7 | **0.931** | **0.655** | [`valorant-yolo11m`](https://huggingface.co/jparedesDS/valorant-yolo11m) |
 
 ## Class labels
 
@@ -55,7 +55,18 @@ Valorant's visual language — saturated abilities, unusual agent silhouettes an
 
 ## Results
 
-Metrics for the YOLOv10b checkpoint on its validation split (999 images, 2,016 instances):
+Metrics for the **YOLO11m** checkpoint on its validation split (999 images, 2,016 instances):
+
+| Class | Precision | Recall | mAP@50 | mAP@50-95 |
+|---|---:|---:|---:|---:|
+| **all** | **0.963** | **0.898** | **0.931** | **0.655** |
+| `Body` | 0.971 | 0.935 | 0.958 | 0.791 |
+| `Head` | 0.955 | 0.862 | 0.904 | 0.519 |
+
+The gap between body and head mAP@50-95 is the usual small-object problem: heads occupy few pixels and are frequently occluded by weapons, UI elements or other players.
+
+<details>
+<summary><strong>YOLOv10b per-class metrics</strong> (same validation split)</summary>
 
 | Class | Precision | Recall | mAP@50 | mAP@50-95 |
 |---|---:|---:|---:|---:|
@@ -63,9 +74,11 @@ Metrics for the YOLOv10b checkpoint on its validation split (999 images, 2,016 i
 | `Body` | 0.969 | 0.914 | 0.955 | 0.760 |
 | `Head` | 0.948 | 0.857 | 0.896 | 0.503 |
 
-The gap between body and head mAP@50-95 is the usual small-object problem: heads occupy few pixels and are frequently occluded by weapons, UI elements or other players.
+</details>
 
-### Training results and curves
+> YOLO11m improves on YOLOv10b across every metric while using fewer GFLOPs (67.7 vs 97.9), making it the recommended checkpoint.
+
+### Training results and curves (YOLOv10b run)
 
 <p align="center">
   <img src="assets/results.png" alt="Training results" width="60%">
@@ -92,15 +105,17 @@ The gap between body and head mAP@50-95 is the usual small-object problem: heads
 ## Quick start
 
 ```bash
-hf download jparedesDS/valorant-yolov10b yolov10b_vlr.pt --local-dir weights
+hf download jparedesDS/valorant-yolo11m vlr-yolo11m.pt --local-dir weights
 ```
 
 ```python
 from ultralytics import YOLO
 
-model = YOLO("weights/yolov10b_vlr.pt")
+model = YOLO("weights/vlr-yolo11m.pt")
 results = model.predict("frame.jpg", conf=0.25, save=True, device=0)
 ```
+
+For the YOLOv10b checkpoint, download `yolov10b_vlr.pt` from [`valorant-yolov10b`](https://huggingface.co/jparedesDS/valorant-yolov10b) and load it the same way.
 
 ## Dataset
 

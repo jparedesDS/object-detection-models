@@ -38,17 +38,17 @@ The dataset uses four classes that separate team identity from body part, so dow
 
 ## Models
 
-| Model | Architecture | Weights | Params | mAP@50 | mAP@50-95 | Hugging Face |
-|---|---|---|:---:|:---:|:---:|---|
-| CS2 · YOLOv9c | YOLOv9c | `yolov9c_cs2.pt` | — | — | — | [`cs2-yolov9c`](https://huggingface.co/jparedesDS/cs2-yolov9c) |
-| CS2 · YOLOv10s | YOLOv10s | `cs2_yolov10s.pt` | 8.0 M | **0.979** | **0.772** | [`cs2-yolov10s`](https://huggingface.co/jparedesDS/cs2-yolov10s) |
-| CS2 · YOLOv10m | YOLOv10m | `yolov10m_cs2.pt` | — | — | — | [`cs2-yolov10m`](https://huggingface.co/jparedesDS/cs2-yolov10m) |
-| CS2 · YOLOv10b | YOLOv10b | `yolov10b_cs2.pt` | — | — | — | [`cs2-yolov10b`](https://huggingface.co/jparedesDS/cs2-yolov10b) |
-| CS2 · YOLO12s | YOLO12s | `cs2_yolo12s.pt` | — | — | — | [`cs2_yolo12s`](https://huggingface.co/jparedesDS/cs2_yolo12s) |
+| Model | Architecture | Weights | Params | GFLOPs | mAP@50 | mAP@50-95 | Hugging Face |
+|---|---|---|:---:|:---:|:---:|:---:|---|
+| CS2 · YOLOv9c | YOLOv9c | `yolov9c_cs2.pt` | — | — | — | — | [`cs2-yolov9c`](https://huggingface.co/jparedesDS/cs2-yolov9c) |
+| CS2 · YOLOv10s | YOLOv10s | `cs2_yolov10s.pt` | 8.0 M | 24.5 | **0.979** | **0.772** | [`cs2-yolov10s`](https://huggingface.co/jparedesDS/cs2-yolov10s) |
+| CS2 · YOLOv10m | YOLOv10m | `yolov10m_cs2.pt` | — | — | — | — | [`cs2-yolov10m`](https://huggingface.co/jparedesDS/cs2-yolov10m) |
+| CS2 · YOLOv10b | YOLOv10b | `yolov10b_cs2.pt` | 20.4 M | 98.0 | **0.850** | **0.635** | [`cs2-yolov10b`](https://huggingface.co/jparedesDS/cs2-yolov10b) |
+| CS2 · YOLO12s | YOLO12s | `cs2_yolo12s.pt` | 9.2 M | 21.2 | **0.717** | **0.453** | [`cs2_yolo12s`](https://huggingface.co/jparedesDS/cs2_yolo12s) |
 
 > All five repositories are gated on Hugging Face: accept the conditions on the model card and run `hf auth login` before downloading.
 >
-> A dash means the metric was not recorded in the training artifacts available for that checkpoint.
+> A dash means the metric was not published for that checkpoint. YOLOv9c and YOLOv10m expose only training-curve images on their model cards, without a numeric validation summary.
 
 ## Class labels
 
@@ -74,6 +74,34 @@ Metrics for the YOLOv10s checkpoint on its validation split (160 images, 372 ins
 | `t_head` | 0.938 | 0.973 | 0.984 | 0.728 |
 
 Head localization is the hardest class, which is expected: heads are small, partially occluded and often overlap with the body box.
+
+<details>
+<summary><strong>YOLOv10b per-class metrics</strong> (90 images / 215 instances)</summary>
+
+| Class | Precision | Recall | mAP@50 | mAP@50-95 |
+|---|---:|---:|---:|---:|
+| **all** | **0.908** | **0.757** | **0.850** | **0.635** |
+| `ct_body` | 0.914 | 0.911 | 0.953 | 0.819 |
+| `ct_head` | 0.909 | 0.639 | 0.735 | 0.465 |
+| `t_body` | 0.932 | 0.921 | 0.964 | 0.781 |
+| `t_head` | 0.877 | 0.556 | 0.748 | 0.476 |
+
+</details>
+
+<details>
+<summary><strong>YOLO12s per-class metrics</strong> (90 images / 255 instances)</summary>
+
+| Class | Precision | Recall | mAP@50 | mAP@50-95 |
+|---|---:|---:|---:|---:|
+| **all** | **0.873** | **0.556** | **0.717** | **0.453** |
+| `CT_Body` | 0.915 | 0.595 | 0.786 | 0.574 |
+| `CT_Head` | 0.848 | 0.485 | 0.685 | 0.361 |
+| `T_Body` | 0.822 | 0.655 | 0.747 | 0.547 |
+| `T_Head` | 0.905 | 0.491 | 0.648 | 0.329 |
+
+</details>
+
+> The YOLOv10b and YOLO12s checkpoints were evaluated on a smaller validation split (90 images) than YOLOv10s (160 images), so their scores are not directly comparable. YOLOv10s remains the recommended checkpoint for this project.
 
 ### Training results and label distribution
 

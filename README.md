@@ -48,11 +48,11 @@ The projects cover two very different worlds — industrial non-destructive test
 | **CS2 Players · YOLOv9c** | YOLOv9c | CS2 player & head detection | 4 | — | — | [HF](https://huggingface.co/jparedesDS/cs2-yolov9c) · [Docs](projects/cs2-players-detection/) |
 | **CS2 Players · YOLOv10s** | YOLOv10s | CS2 player & head detection | 4 | **0.979** | **0.772** | [HF](https://huggingface.co/jparedesDS/cs2-yolov10s) · [Docs](projects/cs2-players-detection/) |
 | **CS2 Players · YOLOv10m** | YOLOv10m | CS2 player & head detection | 4 | — | — | [HF](https://huggingface.co/jparedesDS/cs2-yolov10m) · [Docs](projects/cs2-players-detection/) |
-| **CS2 Players · YOLOv10b** | YOLOv10b | CS2 player & head detection | 4 | — | — | [HF](https://huggingface.co/jparedesDS/cs2-yolov10b) · [Docs](projects/cs2-players-detection/) |
-| **CS2 Players · YOLO12s** | YOLO12s | CS2 player & head detection | 4 | — | — | [HF](https://huggingface.co/jparedesDS/cs2_yolo12s) · [Docs](projects/cs2-players-detection/) |
+| **CS2 Players · YOLOv10b** | YOLOv10b | CS2 player & head detection | 4 | **0.850** | **0.635** | [HF](https://huggingface.co/jparedesDS/cs2-yolov10b) · [Docs](projects/cs2-players-detection/) |
+| **CS2 Players · YOLO12s** | YOLO12s | CS2 player & head detection | 4 | **0.717** | **0.453** | [HF](https://huggingface.co/jparedesDS/cs2_yolo12s) · [Docs](projects/cs2-players-detection/) |
 | **CS2 Weapons · YOLO12m** | YOLO12m | CS2 weapon classification | 19 | **0.993** | **0.871** | [HF](https://huggingface.co/jparedesDS/cs2-yolo12m-weapon-detection) · [Docs](projects/cs2-weapon-detection/) |
 | **Valorant Players · YOLOv10b** | YOLOv10b | Valorant body & head detection | 2 | **0.925** | **0.631** | [HF](https://huggingface.co/jparedesDS/valorant-yolov10b) · [Docs](projects/valorant-players-detection/) |
-| **Valorant Players · YOLO11m** | YOLO11m | Valorant body & head detection | 2 | — | — | [HF](https://huggingface.co/jparedesDS/valorant-yolo11m) · [Docs](projects/valorant-players-detection/) |
+| **Valorant Players · YOLO11m** | YOLO11m | Valorant body & head detection | 2 | **0.931** | **0.655** | [HF](https://huggingface.co/jparedesDS/valorant-yolo11m) · [Docs](projects/valorant-players-detection/) |
 | **Deadlock Players · YOLO11l** | YOLO11l | Deadlock combat event detection | 4 | **0.856** | **0.486** | [HF](https://huggingface.co/jparedesDS/deadlock-yolo11l) · [Docs](projects/deadlock-players-detection/) |
 | **Overwatch 2 · YOLO11m** | YOLO11m | OW2 head detection | 1 | **0.660** | **0.317** | [HF](https://huggingface.co/jparedesDS/ow2-yolo11m) · [Docs](projects/overwatch2-players-detection/) |
 | **Fortnite · YOLO11m** | YOLO11m | Fortnite player & head detection | 2 | **0.828** | **0.668** | [HF](https://huggingface.co/jparedesDS/fortnite-yolo11m) · [Docs](projects/fortnite-players-detection/) |
@@ -181,6 +181,7 @@ Guides:
 
 - **[Training guide](docs/training-guide.md)** — dataset layout, `data.yaml`, training, validation and export.
 - **[Annotation tools](docs/annotation-tools.md)** — what each script expects and the recommended workflow.
+- **[Maintenance](docs/maintenance.md)** — HF card back-links, social preview and the add-a-model checklist.
 - **[YOLO training notebook](notebooks/yolo-training-guide.ipynb)** — the full Spanish-language walkthrough used to train these models.
 
 ---
